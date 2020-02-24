@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="#6A959E"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pol1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#66FFFFFF"
+                android:ems="10"
+                android:hint="Usage: 2x^3+x+1"
+                android:inputType="textPersonName"
+                android:textColorHint="#8D050505" />
+
+            <EditText
+                android:id="@+id/pol2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="1dp"
+                android:background="#66FFFFFF"
+                android:ems="10"
+                android:hint="Usage: 5x^2+3"
+                android:inputType="textPersonName"
+                android:textColorHint="#8C050505" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#66FFFFFF"
+                android:hint="result"
+                android:textColor="#000000"
+                android:textColorHint="#8C050505"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <com.calpolinom.calculatorpolinoame.Keyboard
+            android:id="@+id/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Add"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Substract"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Divide"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonMul"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Mul"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/buttonIntegrare"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Integration"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/buttonDerivare"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Derivation"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
